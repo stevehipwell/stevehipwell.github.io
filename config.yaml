@@ -1,0 +1,78 @@
+baseURL: /
+title: Steve's Blog
+theme: ghostwriter
+languageCode: en-gb
+copyright: Steve Hipwell
+disqusShortname:
+googleAnalytics:
+pygmentsUseClasses: true
+pygmentsCodefences: true
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    tabWidth: 2
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+    useSessionStorage: false
+
+author:
+  name: Steve Hipwell
+  profile:
+
+taxonomies:
+  tag: tags
+
+params:
+  mainSections:
+    - post
+  intro: true
+  headline: Steve's Blog
+  description: Welcome to my world!
+  github: "https://github.com/stevehipwell"
+  gitlab: "https://gitlab.com/stevehipwell"
+  linkedin: "https://www.linkedin.com/in/stevehipwell/"
+  twitter: "https://twitter.com/stevehipwell"
+  stackoverflow: "https://stackoverflow.com/users/89075/stevehipwell"
+  facebook: "https://www.facebook.com/stevehipwell"
+  email:
+  opengraph: true
+  shareTwitter: false
+  shareFacebook: false
+  shareGooglePlus: false
+  shareLinkedIn: false
+  dateFormat: "Mon, Jan 2, 2006"
+  exponeaJsUrl: ""
+  exponeaTarget: ""
+  exponeaToken: ""
+  exponeaTrackVisits: false
+  readingTime: false
+  readingTimeText: "Estimated reading time:"
+  fathomUrl: ""
+  fathomSiteId: ""
+
+permalinks:
+  post: "/:year/:month/:day/:filename/"
+
+menu:
+  main:
+    - name: Blog
+      url: /
+      weight: 1
+    # - name: Projects
+    #   url: /project/
+    #   weight: 2
+    - name: About
+      url: /page/about/
+      weight: 2
