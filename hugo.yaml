@@ -1,0 +1,60 @@
+title: Steve's Blog
+baseURL: https://stevehipwell.github.io
+
+# This is what goes in <html lang="">
+languageCode: en-us
+
+# This defines how dates are formatted
+defaultContentLanguage: en-gb
+
+# Enable emojis globally
+enableEmoji: true
+ignoreErrors:
+  - additional-script-loading-error # ignore error of loading additional scripts.
+
+# Hugo module configuration
+module:
+  proxy: direct
+  hugoVersion:
+    extended: true
+    min: 0.140.2
+  imports:
+    - path: github.com/hugo-sid/hugo-blog-awesome
+      disable: false
+
+# Configure markup and syntax highlighting
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+# Configure main menu
+menu:
+  main:
+    - pageRef: about
+      name: about
+      url: /about/
+
+# Configure params for the site
+params:
+  browserconfig:
+    TileColor: "#2d89ef"
+  socialIcons:
+    - name: github
+      url: https://github.com/stevehipwell
+    - name: linkedin
+      url: https://www.linkedin.com/in/stevehipwell
+    - name: bluesky
+      url: https://bsky.app/profile/stevehipwell.bsky.social
+    - name: mastodon
+      url: https://hachyderm.io/@stevehipwell
+    - name: twitter
+      url: https://twitter.com/stevehipwell
+    - name: RSS
+      url: /index.xml
