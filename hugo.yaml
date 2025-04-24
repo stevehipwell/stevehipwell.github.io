@@ -37,12 +37,29 @@ markup:
 # Configure main menu
 menu:
   main:
+    - pageRef: /
+      name: home
+      url: /
+      weight: 10
+    - pageRef: posts
+      name: posts
+      url: /posts/
+      weight: 20
     - pageRef: about
       name: about
       url: /about/
+      weight: 30
 
 # Configure params for the site
 params:
+  sitename: Steve Hipwell
+  defaultColor: dark
+  description: My personal blog!
+  author:
+    name: Steve Hipwell
+    intro: Steve Hipwell
+    description: Hi I'm Steve and this is my personal blog.
+    avatar: /images/avatar.jpg
   browserconfig:
     TileColor: "#2d89ef"
   socialIcons:
