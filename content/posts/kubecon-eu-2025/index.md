@@ -1,6 +1,6 @@
 ---
 date: 2025-04-24T13:48:11+01:00
-draft: true
+draft: false
 title: KubeCon EU 2025
 ---
 
