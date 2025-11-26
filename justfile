@@ -3,8 +3,11 @@ set windows-shell := ["pwsh", "-NoLogo", "-Command"]
 default:
   just --list
 
-markdownlint:
-  npm exec markdownlint-cli2 --yes -- --fix "**/*.{md,markdown}"
+fmt:
+  rumdl fmt --fix .
+
+lint:
+  rumdl check .
 
 build:
   hugo build --gc  --minify --environment production

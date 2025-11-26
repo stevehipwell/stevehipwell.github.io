@@ -28,11 +28,20 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Run markdownlint check
-        uses: DavidAnson/markdownlint-cli2-action@992badcdf24e3b8eb7e87ff9287fe931bcb00c6e # v20.0.0
+      - name: Install rumdl
+        uses: action-stars/install-tool-from-github-release@1fa61c3bea52eca3bcdb1f5c961a3b113fe7fa54 # v0.2.6
         with:
-          config: .markdownlint.yaml
-          globs: "**/*.md"
+          github_token: ${{ github.token }}
+          owner: rvben
+          repository: rumdl
+          filename_format: "{name}-v{version}-{arch}-{os}.{ext}"
+          arch_amd64: x86_64-unknown
+          os_linux: linux-gnu
+          check_command: rumdl --version
+          version: latest
+
+      - name: Lint
+        run: rumdl check --output-format github .
 
       - name: Setup Pages
         id: pages
