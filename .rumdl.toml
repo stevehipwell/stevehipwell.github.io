@@ -1,0 +1,9 @@
+[global]
+disable = ["MD028", "MD013"]
+
+[MD024]
+siblings-only = true
+
+[MD033]
+allowed-elements = ["a", "br", "details", "i", "p", "summary", "sub", "sup"]
+
