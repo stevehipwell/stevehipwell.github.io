@@ -4,7 +4,7 @@ draft: false
 title: Give Blog another Chance
 ---
 
-### Or, why I'm going to try my hand at blogging again
+## Or, why I'm going to try my hand at blogging again
 
 After two years of inactivity from my first post it might be reasonably assumed that I wasn't going to follow through with my plan to start blogging! *
 

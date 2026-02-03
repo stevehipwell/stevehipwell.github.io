@@ -4,7 +4,7 @@ draft: false
 title: Give Blog a Chance
 ---
 
-### Or, why I'm going to try my hand at blogging
+## Or, why I'm going to try my hand at blogging
 
 So I'm going to give this blogging thing a go; I've attempted to write blog posts on a number of occasions but I've never managed to finish one and publish it. I'm not sure why I think this time will be any different but here goes...
 
