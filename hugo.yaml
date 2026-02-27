@@ -1,5 +1,5 @@
-title: Steve's Blog
-baseURL: https://stevehipwell.github.io
+title: Steve Hipwell
+baseURL: https://steve.hipwell.xyz
 
 # This is what goes in <html lang="">
 languageCode: en-us
@@ -17,7 +17,7 @@ module:
   proxy: direct
   hugoVersion:
     extended: true
-    min: 0.140.2
+    min: 0.155.3
   imports:
     - path: github.com/hugo-sid/hugo-blog-awesome
       disable: false
@@ -54,12 +54,13 @@ menu:
 params:
   sitename: Steve Hipwell
   defaultColor: dark
-  description: My personal blog!
+  description: A window into my world!
   author:
     name: Steve Hipwell
     intro: Steve Hipwell
-    description: Hi I'm Steve and this is my personal blog.
+    description: Strong opinions, loosely held.
     avatar: /images/avatar.jpg
+    email: steve.hipwell@gmail.com
   browserconfig:
     TileColor: "#2d89ef"
   socialIcons:
@@ -68,7 +69,7 @@ params:
     - name: linkedin
       url: https://www.linkedin.com/in/stevehipwell
     - name: bluesky
-      url: https://bsky.app/profile/stevehipwell.bsky.social
+      url: https://bsky.app/profile/steve.hipwell.xyz
     - name: mastodon
       url: https://hachyderm.io/@stevehipwell
     - name: twitter

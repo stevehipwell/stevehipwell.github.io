@@ -49,10 +49,25 @@ jobs:
         with:
           enablement: false
 
+      - name: Install YQ
+        uses: action-stars/install-tool-from-github-release@1fa61c3bea52eca3bcdb1f5c961a3b113fe7fa54 # v0.2.6
+        with:
+          github_token: ${{ github.token }}
+          owner: mikefarah
+          repository: yq
+          extract: false
+          filename_format: "{name}_{os}_{arch}"
+          check_command: yq --version
+          version: latest
+
+      - name: Get Hugo version
+        id: hugo_version
+        run: echo "version=$(yq --unwrapScalar '.module.hugoVersion.min // "latest"' ./hugo.yaml)" >> "${GITHUB_OUTPUT}"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
         with:
-          hugo-version: latest
+          hugo-version: ${{ steps.hugo_version.outputs.version }}
           extended: true
 
       - name: Build with Hugo
