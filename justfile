@@ -1,16 +1,16 @@
 set windows-shell := ["pwsh", "-NoLogo", "-Command"]
 
 default:
-  just --list
+    just --list
 
 fmt:
-  rumdl fmt --fix .
+    rumdl fmt --fix .
 
 lint:
-  rumdl check .
+    rumdl check .
 
 build:
-  hugo build --gc  --minify --environment production
+    hugo build --gc  --minify --environment production
 
 serve:
-  hugo serve --buildDrafts
+    hugo serve --buildDrafts --environment development
