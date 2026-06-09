@@ -48,7 +48,7 @@ jobs:
 
       - name: Get Hugo version
         id: hugo_version
-        run: echo "version=$(yq --unwrapScalar '.module.hugoVersion.min // "latest"' ./hugo.yaml)" >> "${GITHUB_OUTPUT}"
+        run: echo "version=$(yq --unwrapScalar '.module.hugoVersion.max // "latest"' ./hugo.yaml)" >> "${GITHUB_OUTPUT}"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@2752ce1d29631191ea3f27c23495fa06139a5b78 # v3.2.1
