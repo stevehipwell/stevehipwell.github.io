@@ -14,3 +14,6 @@ build:
 
 serve:
     hugo serve --buildDrafts --environment development
+
+upgrade:
+    hugo mod get -u github.com/hugo-sid/hugo-blog-awesome/v2@latest && hugo mod tidy
